@@ -1,9 +1,27 @@
 .container {
   margin: 20px auto;
-  width: 600px;
-  padding: 0px 20px 20px 20px;
+  width: 960px;
+  padding: 20px 20px;
   border: 1px dotted black;
+  overflow: hidden;
 }
-th {
-  text-align: left;
+
+.container header {
+	height: 100px;
 }
+
+.articles {
+	width: 75%;
+	float: left;
+}
+
+.tags {
+	width: 20%;
+	float: left;
+	margin-left: 5%;
+}
+
+.tags header {
+	height: 50px;
+}
+

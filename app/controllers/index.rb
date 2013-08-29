@@ -1,4 +1,5 @@
 get '/' do
-  # Look in app/views/index.erb
+  @posts = Post.last(5)
+  p @posts
   erb :index
 end
