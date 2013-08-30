@@ -1,0 +1,14 @@
+
+  <p>posts tagged with: <%= @tag.description %></p>
+<section class="articles">
+  <% @posts.each do |post| %>
+  <article>
+    <h1><a href="/post/<%=post.id%>"><%= post.title %></a></h1>
+    <p>
+      <%= post.body %>
+    </p>
+    <p>By:<a href="#"><%= post.user.username %></a></p>
+  </article>
+  <% end %>
+  <a href="#">View All Posts</a>
+</section>  

@@ -8,12 +8,13 @@
 
 .container header {
 	height: 100px;
+	border-bottom: 3px solid black;
 }
 
 .articles {
 	width: 75%;
 	float: left;
-}
+}	
 
 .tags {
 	width: 20%;

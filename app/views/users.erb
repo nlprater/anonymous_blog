@@ -1,3 +1,5 @@
+<p>posts authored by: <%= @user.username %></p>
+
 <section class="articles">
   <% @posts.each do |post| %>
   <article>
@@ -9,20 +11,13 @@
                               <a href="/tag/<%= tag.id %>"><%= tag.description %></a>
                             <% end %>
     </span></p>
-    <p>posted by: <a href='/user/<%= post.user.username %>'><%= post.user.username %></a></p>
   </article>
   <% end %>
   <a href="#">View All Posts</a>
 </section>  
 <aside class="tags">
   <header>
-    <h1>Tags</h1>
+    <h1>Author Bio</h1>
   </header>
-  <ul>
-    <% @posts.each do |post| %>
-      <% post.tags.each do |tag| %>
-    <li><a href="/tag/<%= tag.id %>"><%= tag.description %></a></li>
-      <% end %>
-    <% end %>
-  </ul>
+  
 </aside>

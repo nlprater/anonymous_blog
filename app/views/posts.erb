@@ -1,0 +1,15 @@
+<section class="post">
+  <article>
+    <h1><%= @post.title %></h1>
+    <p>
+      <%= @post.body %>
+    </p>
+    <p><span class="labels"><% if @tags.length > 0 %>
+                                <%@tags.each do |tag|%>
+                                  <a href="/tag/<%= tag.id %>"><%= tag.description %></a>
+                                <% end %>
+                            <% end %>
+    </span></p>
+    <p>posted by: <a href="/user/<%= @post.user.username %>"><%= @post.user.username %></a></p>
+  </article>
+</section>  
